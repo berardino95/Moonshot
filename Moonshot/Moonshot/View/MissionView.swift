@@ -11,7 +11,7 @@ struct MissionView: View {
     
     struct CrewMember {
         let role : String //es Command Pilot
-        let astronaut : Astronauts //has id, name, description
+        let astronaut : Astronaut //has id, name, description
     }
     
     let mission: Mission
@@ -21,35 +21,36 @@ struct MissionView: View {
         GeometryReader { geo in
             ScrollView{
                 VStack{
+                    
                     Image(mission.image)
                         .resizable()
                         .scaledToFit()
                         .frame(maxWidth: geo.size.width * 0.6)
                         .padding(.top)
                     
-                    VStack(alignment: .leading, spacing: 15) {
+                    Label(mission.longFormattedLaunchDate, systemImage: "calendar")
+                        .padding(.top)
+                    
+                    VStack(alignment: .leading) {
+                        
+                        RectangleDivider()
+                        
                         Text("Mission Highlights")
                             .font(.title.bold())
+                        
                         Text(mission.description)
+                            .padding(.top, 3)
+                        
+                        RectangleDivider()
+                        
+                        
+                        Text("Crew")
+                            .font(.title.bold())
                     }
-                    .padding()
+                    .padding(.horizontal)
                 }
-                .padding(.bottom)
                 
-                ScrollView(.horizontal, showsIndicators: false){
-                    HStack(spacing: 30){
-                        ForEach(crew, id: \.astronaut.name) { crew in
-                            VStack(spacing: 5){
-                                Text(crew.astronaut.name)
-                                    .fontWeight(.bold)
-                                Text(crew.role)
-                            }
-                        }
-                    }
-                    .padding()
-                }
-                .padding(.bottom)
-
+                CrewView(crew: crew)
             }
         }
         .navigationTitle(mission.displayName)
@@ -57,7 +58,7 @@ struct MissionView: View {
         .background(.darkBackground)
     }
     
-    init(mission: Mission, astronauts: [String: Astronauts]) {
+    init(mission: Mission, astronauts: [String: Astronaut]) {
         self.mission = mission
         
         self.crew = mission.crew.map{ member in //Mission.crew : [CrewRole] that as name and id
@@ -79,7 +80,7 @@ struct MissionView_Previews: PreviewProvider {
     
     //create a variable retrieving data and use it in the preview provider
     static let missions : [Mission] = Bundle.main.decode("missions.json")
-    static let astronauts : [String : Astronauts] = Bundle.main.decode("astronauts.json")
+    static let astronauts : [String : Astronaut] = Bundle.main.decode("astronauts.json")
     
     static var previews: some View {
         MissionView(mission: missions[5], astronauts: astronauts)

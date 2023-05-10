@@ -19,4 +19,8 @@ extension ShapeStyle where Self == Color {
         Color(red: 0.2, green: 0.2, blue: 0.3)
     }
     
+    static var gold: Color {
+        Color(red: 0.9, green: 0.8, blue: 0.03)
+    }
+    
 }
