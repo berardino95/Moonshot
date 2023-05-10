@@ -17,6 +17,7 @@
 		7F8784F32A0984ED003B31B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8784F22A0984ED003B31B5 /* ContentView.swift */; };
 		7F8784F52A0984EF003B31B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8784F42A0984EF003B31B5 /* Assets.xcassets */; };
 		7F8784F82A0984EF003B31B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8784F72A0984EF003B31B5 /* Preview Assets.xcassets */; };
+		7FA732D72A0B788500B1D5B1 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA732D62A0B788500B1D5B1 /* MissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		7F8784F22A0984ED003B31B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F8784F42A0984EF003B31B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F8784F72A0984EF003B31B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FA732D62A0B788500B1D5B1 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				7F0CD1462A09953600806C2B /* Bundle-Decodable.swift */,
 				7F8784F02A0984ED003B31B5 /* MoonshotApp.swift */,
 				7F8784F22A0984ED003B31B5 /* ContentView.swift */,
+				7FA732D62A0B788500B1D5B1 /* MissionView.swift */,
 				7F0CD14A2A0A3B9A00806C2B /* Color-theme.swift */,
 				7F8784F42A0984EF003B31B5 /* Assets.xcassets */,
 				7F8784F62A0984EF003B31B5 /* Preview Content */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA732D72A0B788500B1D5B1 /* MissionView.swift in Sources */,
 				7F8784F32A0984ED003B31B5 /* ContentView.swift in Sources */,
 				7F0CD14B2A0A3B9A00806C2B /* Color-theme.swift in Sources */,
 				7F8784F12A0984ED003B31B5 /* MoonshotApp.swift in Sources */,

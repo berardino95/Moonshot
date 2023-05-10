@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let astronauts:[String : Astronauts] = Bundle.main.decode("astronauts.json")
+    let astronauts : [String : Astronauts] = Bundle.main.decode("astronauts.json")
     let missions : [Mission] = Bundle.main.decode("missions.json")
     
     //only one column adaptive, it must have minimum 150 point width but can extend whenever it wants
@@ -30,7 +30,7 @@ struct ContentView: View {
                                     .frame(width: 100, height: 100)
                                     .padding()
                                 
-                                VStack{
+                                VStack(spacing: 5){
                                     Text(mission.displayName)
                                         .font(.headline)
                                         .foregroundColor(.white)
