@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FB919EA2A56020E00E42C29 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FB919E92A56020E00E42C29 /* missions.json */; };
 		7F0CD1422A09942A00806C2B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CD1402A09942A00806C2B /* astronauts.json */; };
-		7F0CD1432A09942A00806C2B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CD1412A09942A00806C2B /* missions.json */; };
 		7F0CD1452A0994A300806C2B /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CD1442A0994A300806C2B /* Astronaut.swift */; };
 		7F0CD1472A09953600806C2B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CD1462A09953600806C2B /* Bundle-Decodable.swift */; };
 		7F0CD1492A099B9B00806C2B /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CD1482A099B9B00806C2B /* Missions.swift */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FB919E92A56020E00E42C29 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = missions.json; path = ../../../../../../Downloads/Accessibility/project8/Moonshot/missions.json; sourceTree = "<group>"; };
 		7F0CD1402A09942A00806C2B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
-		7F0CD1412A09942A00806C2B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		7F0CD1442A0994A300806C2B /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		7F0CD1462A09953600806C2B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		7F0CD1482A099B9B00806C2B /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		7F441B8B2A0E35E9002DA517 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				5FB919E92A56020E00E42C29 /* missions.json */,
 				7F0CD1402A09942A00806C2B /* astronauts.json */,
-				7F0CD1412A09942A00806C2B /* missions.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F0CD1422A09942A00806C2B /* astronauts.json in Resources */,
+				5FB919EA2A56020E00E42C29 /* missions.json in Resources */,
 				7F8784F82A0984EF003B31B5 /* Preview Assets.xcassets in Resources */,
-				7F0CD1432A09942A00806C2B /* missions.json in Resources */,
 				7F8784F52A0984EF003B31B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

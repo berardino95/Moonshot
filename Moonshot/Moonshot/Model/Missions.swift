@@ -20,6 +20,7 @@ struct Mission: Codable, Identifiable {
     let launchDate : Date?
     let crew: [CrewRole]
     let description: String
+    let badge: String
     
     //Generate a string with the name of the mission interpolating string "Apollo" + id of the mission
     var displayName : String {
