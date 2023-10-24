@@ -27,7 +27,6 @@ struct MissionView: View {
                         .scaledToFit()
                         .frame(maxWidth: geo.size.width * 0.6)
                         .padding(.top)
-                        .accessibilityLabel(mission.badge)
                     
                     Label(mission.longFormattedLaunchDate, systemImage: "calendar")
                         .padding(.top)
